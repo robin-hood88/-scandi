@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #533738;
+    background-color: #EFE6E4;
+}
+
+/*
+Стили для главного хедера
+*/
+
+header > .container {
+    /*width: clamp(300px,1920px,1400px);*/
+    /*max-width: 1400px;*/
+    height: 100vh;
+    padding-top: 36px;
+    padding-bottom: 168px;
+    background: url('../img/anastasiya-vysotskaya-v5GfetB7Yv0-unsplash\ 1.png') no-repeat center center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.main-menu {
+    max-width: 1201.28px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-menu > a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #533738;
+}
+
+.main-menu__logo {
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+
+/*.main-menu__logo::before {
+    display: inline-block;
+    content: '';
+    width: 26px;
+    height: 25px;
+    background: url('..//img/Без\ имени-1\ 1.png') no-repeat;
+ 
+    vertical-align: middle;
+}*/
+
+.main-menu__logo > img {
+    vertical-align: middle;
+}
+
+.main-header-promo > .header-promo__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-promo__title {
+    margin: 0;
+    margin-top: 91px;
+    margin-bottom: 24px;
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 400;
+    max-width: 535px;
+    margin-left: 13%;
+}
+
+.header-promo__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 430px;
+    margin-left: 13%;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 310px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #533738;
+    background: #CC8B86;
+}
+
+.promo-btn {
+    margin-left: 13%;
+    margin-top: 21px;
+}
+
+/*
+Стили для секции О нас
+*/
+
+.about-us > .container {
+    max-width: 1006px;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+    text-align: center;
+}
+
+.about-us .container > img {
+    float: left;
+    margin-bottom: 21px;
+    margin-right: 63.46px;
+}
+
+.about-us > .container::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+/*.about-us-text {
+    font-size: 18px;
+    line-height: 30px;
+}
+*/
+
+.about-us-progress {
+    background-color: #8D7370;
+}
+
+.about-us-progress  > .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1036px;
+    margin: 0 auto;
+    padding-top: 85px;
+    padding-bottom: 81px;
+}
+
+.progress-items {
+    width: 190px;
+}
+
+.progress-items__text {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.progress-items__subtetx {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+/*
+Стили для секции Наши работы
+*/
+
+.our-work > .section-title {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 65px;
+}
+
+.our-work > .container {
+    display: grid;
+    grid-template-columns: repeat(12, 81px);
+    column-gap: 20px;
+    row-gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+}
+
+.our-work > .container > a {
+    position: relative;
+}
+
+.our-work > .container > a::before {
+    position: absolute;
+    display: block;
+    content: attr(data-title);
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    padding: 85px 109px;
+    padding-bottom: 0;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(100, 72, 69, 0.8);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.our-work > .container > a::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: attr(data-description);
+    width: 100%;
+    box-sizing: border-box;
+    height: 60%;
+    padding: 0px 35px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    background: rgba(100, 72, 69, 0.8);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.our-work > .container > a:hover::before,
+.our-work > .container > a:hover::after {
+    opacity: 1;
+}
+
+.our-work__item-1 {
+    grid-column: 1/6;
+}
+
+.our-work__item-2 {
+    grid-column: 6/13;
+}
+
+.our-work__item-3 {
+    grid-column: 1/8;
+}
+
+.our-work__item-4 {
+    grid-column: 8/13;
+}
+
+.more {
+    position: relative;
+    display: block;
+    width: 294px;
+    height: 37px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 65px;
+    color: #533738;
+}
+
+.more::after {
+    position: absolute;
+    display: block;
+    content: '';
+    right: 0;
+    top: 40%;
+    width: 61px;
+    height: 16px;
+    background: url('..//img/Arrow\ 3.png') no-repeat; 
+}
+
+/*
+Стили для секции Команда
+*/
+
+.team {
+    background-color: #E2C4BA;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.team > .section-title {
+  
+}
+
+.team > .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1036px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.team-people {
+    flex-basis: 320px;
+}
+
+.team-people > img {
+    transition: ease-in 0.2s;
+}
+
+.team-people > img:hover {
+    transform: scale(1.1);
+}
+
+.people-info {
+    margin: 0;
+}
+
+.team > .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.list-numbers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-numbers__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #8D7370;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.list-numbers > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 285px;
+    text-align: center;
+}
