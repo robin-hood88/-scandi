@@ -38,6 +38,11 @@ header > .container {
     font-size: 16px;
     line-height: 20px;
     color: #533738;
+    transition: all .1s linear;
+}
+
+.main-menu > a:hover {
+    transform: scale(1.2);
 }
 
 .main-menu__logo {
@@ -366,4 +371,226 @@ header > .container {
     align-items: center;
     flex-basis: 285px;
     text-align: center;
+}
+
+/*
+Стили для секции Отзывы
+*/
+
+.feedback {
+    padding: 65px 0;
+}
+
+.feedback > .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 834px;
+    margin: 0 auto;
+    padding: 0 101px;
+}
+
+.fedback-item {
+    flex-basis: 407px;
+    padding: 0;
+    margin: 0;
+}
+
+.fedback-item > img:last-child {
+    margin-top: 6px;
+}
+
+.fedback__text {
+    margin: 0;
+    margin-bottom: 28px;
+}
+
+.fedback-author {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.pagination-group {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-back,
+.pagination-next {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: none;
+    font-size: 0;
+    transition: all .2s linear;
+}
+
+.pagination-back:hover,
+.pagination-next:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #CC8B86;
+    cursor: pointer;
+}
+
+.pagination-back {
+    background: url('../img/Arrow\ 2.svg') no-repeat  #CC8B86 center center;
+}
+
+.pagination-next {
+    background: url('../img/Arrow\ 2\ \(1\).svg') no-repeat  #CC8B86 center center;
+}
+
+/*
+Стили для секции Заявка 
+*/
+
+.request {
+    background-color: #8D7370;
+}
+
+.request > .container {
+    max-width: 1118px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper {
+    flex-basis: 508px;
+}
+
+.form-header {
+    max-width: 508px;
+    margin-top: 50PX;
+}
+
+.request {
+    text-align: left;
+    color: #fff;
+}
+
+.request__text {
+    opacity: 0.6;
+    margin-bottom: 44px;
+}
+
+.main-form {
+    max-width: 508px;
+}
+
+.main-form input,
+button {
+    display: block;
+}
+
+.main-form input {
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px 5px;
+    margin-bottom: 35px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+}
+
+::-webkit-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+}
+::-moz-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+}
+
+:-moz-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+}
+:-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+}
+
+.send {
+    border: none;
+}
+
+.map {
+   position: relative;
+   margin: 0;
+   font-size: 0;
+   line-height: 0;
+}
+
+.map > figcaption {
+    height: 0;
+}
+
+iframe {
+    top: 0;
+    position: absolute;
+}
+
+/*
+Стили для секции Главного футера 
+*/
+
+.main-footer {
+    padding: 37px 0;
+}
+
+.main-footer > .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-phone {
+   font-size: 18px;
+   line-height: 30px;
+   color: #533738;
+   text-decoration: none;
+   margin-right: 42px;
+}
+
+.footer__adress {
+    margin: 0;
+}
+
+.footer__copyright {
+    margin: 0;
+    margin-left: auto;
 }
