@@ -16,7 +16,7 @@ body {
 header > .container {
     /*width: clamp(300px,1920px,1400px);*/
     /*max-width: 1400px;*/
-    height: 100vh;
+    min-height: 715px;
     padding-top: 36px;
     padding-bottom: 168px;
     background: url('../img/anastasiya-vysotskaya-v5GfetB7Yv0-unsplash\ 1.png') no-repeat center center;
